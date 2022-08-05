@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --logger "xunit;LogFileName={assembly}.results.xml"
+      run: dotnet test --no-build --logger "xunit;LogPath=/{assembly}.results.xml"
     - uses: codecov/codecov-action@v3
   #  - name: Step to run on failure
  #    if: ${{ failure() }}
