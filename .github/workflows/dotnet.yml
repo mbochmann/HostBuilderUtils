@@ -23,7 +23,7 @@ jobs:
       run: dotnet build --no-restore /p:ContinuousIntegrationBuild=true
     - name: Test
       run: dotnet test --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-      uses: codecov/codecov-action@v3
+    - uses: codecov/codecov-action@v3
   #  - name: Step to run on failure
  #    if: ${{ failure() }}
     #  uses: ./.github/workflows/PreBuildServiceProvider.yml
