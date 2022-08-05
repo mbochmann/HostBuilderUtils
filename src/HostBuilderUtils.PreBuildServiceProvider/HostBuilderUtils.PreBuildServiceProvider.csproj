@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Allows to use services through IServiceProvider while still configuring them.</Description>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile></PackageReadmeFile>
+    <PackageTags>HostBuilder;WebHostBuilder;ServiceProvider</PackageTags>
+  </PropertyGroup>
+  <Import Project="..\..\project.props" Condition="Exists('..\\..\\project.props')" />
+  <Import Project="..\..\project.targets" Condition="Exists('..\\..\\project.targets')" />
+  <ItemGroup>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+</Project>

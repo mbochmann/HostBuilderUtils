@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\project.props" Condition="Exists('..\\..\\project.props')" />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HostBuilderUtils.Ioc.Modules.Core\HostBuilderUtils.Ioc.Modules.Core.csproj" />
+  </ItemGroup>
+  <Import Project="..\..\project.targets" Condition="Exists('..\\..\\project.targets')" />
+</Project>

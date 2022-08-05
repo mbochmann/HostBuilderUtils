@@ -1,0 +1,12 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup Label="General">
+        <Company>Bochmann Software</Company>
+        <Copyright>Copyright © Mitja Bochmann 2022</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup Label="RepositorySpecific">
+        <Authors>Mitja Bochmann</Authors>
+        <PackageProjectUrl>https://github.com/mbochmann/HostBuilderUtils</PackageProjectUrl>
+        <RepositoryUrl>$(PackageProjectUrl).git</RepositoryUrl>
+    </PropertyGroup>
+</Project>

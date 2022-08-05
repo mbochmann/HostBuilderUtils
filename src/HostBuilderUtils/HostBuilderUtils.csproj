@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\project.props" Condition="Exists('..\\..\\project.props')" />
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.11.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HostBuilderUtils.Ioc.Modules\HostBuilderUtils.Ioc.Modules.csproj" />
+    <ProjectReference Include="..\HostBuilderUtils.PreBuildServiceProvider\HostBuilderUtils.PreBuildServiceProvider.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="..\..\project.targets" Condition="Exists('..\\..\\project.targets')" />
+</Project>
