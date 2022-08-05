@@ -2,9 +2,9 @@ name: Solution
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -20,10 +20,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore /p:ContinuousIntegrationBuild=true
     - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - uses: codecov/codecov-action@v3
+      run: dotnet test --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      uses: codecov/codecov-action@v3
   #  - name: Step to run on failure
  #    if: ${{ failure() }}
     #  uses: ./.github/workflows/PreBuildServiceProvider.yml
