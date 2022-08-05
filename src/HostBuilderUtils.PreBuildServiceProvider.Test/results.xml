@@ -1,0 +1,10 @@
+<assemblies timestamp="08/05/2022 13:43:44">
+  <assembly name="C:\git\HostBuilderUtils_new\src\HostBuilderUtils.PreBuildServiceProvider.Test\bin\Debug\net6.0\HostBuilderUtils.PreBuildServiceProvider.Test.dll" run-date="2022-08-05" run-time="13:43:44" total="1" passed="1" failed="0" skipped="0" time="0.895" errors="0">
+    <errors />
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for HostBuilderUtils.PreBuildServiceProvider.Test.UnitTest1" time="0.002">
+      <test name="HostBuilderUtils.PreBuildServiceProvider.Test.UnitTest1.Test1" type="HostBuilderUtils.PreBuildServiceProvider.Test.UnitTest1" method="Test1" time="0.0016021" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>

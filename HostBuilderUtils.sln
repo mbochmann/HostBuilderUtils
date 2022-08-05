@@ -5,20 +5,22 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3736839B-C5B2-4B98-B3A2-D5A018FE6B9A}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
 		project.props = project.props
 		project.targets = project.targets
+		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderUtils", "src\HostBuilderUtils\HostBuilderUtils.csproj", "{D301B778-95F0-4F28-A4EB-C8B83C50CA26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostBuilderUtils", "src\HostBuilderUtils\HostBuilderUtils.csproj", "{D301B778-95F0-4F28-A4EB-C8B83C50CA26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderUtils.Ioc.Modules", "src\HostBuilderUtils.Ioc.Modules\HostBuilderUtils.Ioc.Modules.csproj", "{5F0C5142-6CD4-410B-AD99-7A700C189758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostBuilderUtils.Ioc.Modules", "src\HostBuilderUtils.Ioc.Modules\HostBuilderUtils.Ioc.Modules.csproj", "{5F0C5142-6CD4-410B-AD99-7A700C189758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderUtils.Ioc.Modules.Core", "src\HostBuilderUtils.Ioc.Modules.Core\HostBuilderUtils.Ioc.Modules.Core.csproj", "{369D0E7D-E13E-48D0-A9D9-6DF985726645}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostBuilderUtils.Ioc.Modules.Core", "src\HostBuilderUtils.Ioc.Modules.Core\HostBuilderUtils.Ioc.Modules.Core.csproj", "{369D0E7D-E13E-48D0-A9D9-6DF985726645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderUtils.Ioc.DummyModule", "src\HostBuilderUtils.Ioc.DummyModule\HostBuilderUtils.Ioc.DummyModule.csproj", "{91F31621-7DBF-4FA2-89A8-765895A33C6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostBuilderUtils.Ioc.DummyModule", "src\HostBuilderUtils.Ioc.DummyModule\HostBuilderUtils.Ioc.DummyModule.csproj", "{91F31621-7DBF-4FA2-89A8-765895A33C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderUtils.PreBuildServiceProvider", "src\HostBuilderUtils.PreBuildServiceProvider\HostBuilderUtils.PreBuildServiceProvider.csproj", "{3F737EE0-9873-483F-84BA-9D84D54E670B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostBuilderUtils.PreBuildServiceProvider", "src\HostBuilderUtils.PreBuildServiceProvider\HostBuilderUtils.PreBuildServiceProvider.csproj", "{3F737EE0-9873-483F-84BA-9D84D54E670B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostBuilderUtils.PreBuildServiceProvider.Test", "src\HostBuilderUtils.PreBuildServiceProvider.Test\HostBuilderUtils.PreBuildServiceProvider.Test.csproj", "{4D1DCD3A-EE5E-44E5-A427-0E71712BB9CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{3F737EE0-9873-483F-84BA-9D84D54E670B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F737EE0-9873-483F-84BA-9D84D54E670B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F737EE0-9873-483F-84BA-9D84D54E670B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1DCD3A-EE5E-44E5-A427-0E71712BB9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1DCD3A-EE5E-44E5-A427-0E71712BB9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1DCD3A-EE5E-44E5-A427-0E71712BB9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1DCD3A-EE5E-44E5-A427-0E71712BB9CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
