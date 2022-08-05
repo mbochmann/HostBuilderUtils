@@ -1,0 +1,7 @@
+os: Visual Studio 2022
+
+build_script:
+  # dotnet info
+  - ps: dotnet --info
+  - ps: dotnet restore
+  - ps: dotnet build
